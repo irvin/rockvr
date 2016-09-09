@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="canonical" href="https://rschiang.github.io/rockvr/" />
+    <title>SITCON Go!</title>
+    <meta property="og:title" content="SITCON Go! 揪團抓小石" />
+    <meta property="og:description" content="Three.js + Cannon.js 3D demonstration @ COSCUP 2016" />
+    <meta property="og:url" content="https://rschiang.github.io/rockvr/" />
+    <meta property="og:image" content="https://rschiang.github.io/rockvr/assets/share.png" />
+    <script src="aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-sky src="assets/ntu.jpg" rotation="0 -130 0"></a-sky>
+
+    <a-assets>
+      <a-asset-item id="rock" src="assets/rock.dae">
+    </a-assets>
+    <!-- Using the asset management system. -->
+    <a-collada-model src="#rock" position="0 0 0"></a-collada-model>
+  </a-scene>
+</body>
+</html>
